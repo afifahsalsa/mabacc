@@ -11,6 +11,8 @@
                     </div>
                     <div class="col-4 text-end">
                         <div class="pagetitle">
+                            <a href="{{ route('alt.index') }}" class="btn bg-primary-light border-dark float-right"><i
+                                class="bi bi-arrow-left"></i></a>
                             <a href="{{ route('kriteria.create') }}" class="btn bg-primary-light border-dark float-right"><i
                                     class="bi bi-plus-lg"></i></a>
                         </div>
@@ -45,14 +47,14 @@
                                                 <td>
                                                     <div class="container">
                                                         <a href="{{ route('kriteria.edit', $item->id) }}"
-                                                            class="btn bg-gradient-success btn-sm text-black"><i
+                                                            class="btn bg-gradient-success btn-link"><i
                                                                 class="bi bi-pencil-square h4"></i></a>
                                                         <form action="{{ route('kriteria.destroy', $item->id) }}"
                                                             method="post" class="d-inline">
                                                             @csrf
                                                             @method('DELETE')
                                                             <button type="submit"
-                                                                class="btn bg-gradient-danger btn-sm text-black"
+                                                                class="btn bg-gradient-danger btn-link"
                                                                 onclick="return confirm('yakin mau dihapus?')"><i
                                                                     class="bi bi-trash h4"></i></button>
                                                         </form>
@@ -62,7 +64,7 @@
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <a href="{{ route('matriks.index') }}" class="btn bg-primary-light border-dark float-end">Matriks Keputusan</a>
+                                <a href="{{ route('matriks.index') }}" class="btn bg-blue border-dark float-end">Matriks Keputusan</a>
                             </div>
                         </div>
                     </div>

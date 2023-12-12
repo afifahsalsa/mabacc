@@ -186,6 +186,11 @@ h6 {
   border-color: #cfe2ff;
 }
 
+.bg-blue{
+    background-color: #4154f1;
+    color: #FFFF;
+}
+
 .btn.border-dark {
     border: 1px !important; /* Warna dan lebar border disesuaikan */
 }
@@ -278,6 +283,7 @@ h6 {
   outline: 0;
   box-shadow: none;
 }
+
 
 /* Accordion */
 .accordion-item {

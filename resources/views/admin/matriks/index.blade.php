@@ -11,6 +11,8 @@
                     </div>
                     <div class="col-4 text-end">
                         <div class="pagetitle">
+                            <a href="{{ route('kriteria.index') }}" class="btn bg-primary-light border-dark float-right mx-2"><i
+                                class="bi bi-arrow-left"></i></a>
                             <a href="{{ route('matriks.create') }}" class="btn bg-primary-light float-end border-dark"><i
                                     class="bi bi-plus-lg"></i></a>
                         </div>
@@ -50,11 +52,10 @@
                                                 @endforeach
                                                 <td>
                                                     <div class="ml-4">
-                                                        <form action="{{ route('matriks.destroy', $item->id) }}"
-                                                            method="post">
+                                                        <form action="{{ route('matriks.destroy', $item->id) }}" method="post">
                                                             @csrf
                                                             @method('delete')
-                                                            <a href="{{ route('matriks.edit', $item->id) }}"
+                                                            <a href="{{ route('matriks.edit', $a->id) }}"
                                                                 class="btn bg-gradient-success btn-sm text-black"><i
                                                                     class="bi bi-pencil-square h4"></i></a>
                                                             <button type="submit"
@@ -69,7 +70,7 @@
                                     </tbody>
                                 </table>
                                 <a href="{{ route('hitung.index') }}"
-                                    class="btn bg-primary-light float-end border-dark">Normalisasi</a>
+                                    class="btn bg-blue float-end border-dark">Normalisasi</a>
                             </div>
                         </div>
                     </div>

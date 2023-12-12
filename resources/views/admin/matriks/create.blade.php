@@ -54,10 +54,10 @@
                             @endforeach
 
                             <div class="form-group">
-                                <button class="btn btn-dark btn-block">Simpan Matriks</button>
-                            </div>
-                            <div class="form-group">
-                                <a href="{{ route('matriks.index') }}" class="btn btn-primary btn-block">Kembali</a>
+                                <div class="d-flex justify-content-between my-4">
+                                    <a href="{{ route('matriks.index') }}" class="btn bg-dark-light">Kembali</a>
+                                    <button type="submit" class=" btn bg-primary-light">Simpan Matriks</button>
+                                </div>
                             </div>
                         </form>
                     </div>

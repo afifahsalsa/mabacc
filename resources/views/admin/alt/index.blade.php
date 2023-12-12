@@ -57,7 +57,7 @@
                                     </tbody>
                                 </table>
                                 <a href="{{ route('kriteria.index') }}"
-                                    class="btn bg-primary-light float-end border-dark">Input Kriteria</a>
+                                    class="btn bg-blue float-end border-dark">Input Kriteria</a>
                             </div>
                         </div>
                     </div>

@@ -44,14 +44,14 @@
                                     </select>
                                 </div>
                                 @foreach ($kriteria as $k)
-                                    <div class="form-group">
+                                    <div class="form-group my-4">
                                         <label>{{ $k->Code }}</label>
                                         <input type="text" class="form-control" name="nilai[{{ $k->id }}]">
                                     </div>
                                 @endforeach
 
                                 <div class="form-group">
-                                    <button class="btn btn-primary btn-block">Update Matriks</button>
+                                    <button class="btn bg-primary-light float-end border-dark my-2 float-end">Update Matriks</button>
                                 </div>
                             </form>
                         </div>

@@ -113,28 +113,25 @@
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="{{route('alt.index')}}">
-                    <i class="bi bi-menu-button-wide"></i><span>Alternatif</span><i
-                        class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-menu-button-wide"></i><span>Alternatif</span><i class="bi bi-chevron-right ms-auto"></i>
                 </a>
             </li><!-- End Components Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="{{route('kriteria.index')}}">
-                    <i class="bi bi-journal-text"></i><span>Kriteria</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-journal-text"></i><span>Kriteria</span><i class="bi bi-chevron-right ms-auto"></i>
                 </a>
             </li><!-- End Forms Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="{{route('matriks.index')}}">
-                    <i class="bi bi-layout-text-window-reverse"></i><span>Matriks</span><i
-                        class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Matriks</span><i class="bi bi-chevron-right ms-auto"></i>
                 </a>
             </li><!-- End Tables Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="{{route('hitung.index')}}">
-                    <i class="bi bi-bar-chart"></i><span>Hasil Perhitungan</span><i
-                        class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-bar-chart"></i><span>Hasil Perhitungan</span><i class="bi bi-chevron-right ms-auto"></i>
                 </a>
                 <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>

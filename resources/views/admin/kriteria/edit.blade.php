@@ -37,11 +37,13 @@
                                 @method('put')
                                 <div class="form-group">
                                     <label>Code</label>
-                                    <input type="text" class="form-control my-1" name="Code" value="{{ $kriteria->Code }}">
+                                    <input type="text" class="form-control my-1" name="Code"
+                                        value="{{ $kriteria->Code }}">
                                 </div>
                                 <div class="form-group">
                                     <label>Nama</label>
-                                    <input type="text" class="form-control my-1" name="Nama" value="{{ $kriteria->Nama }}">
+                                    <input type="text" class="form-control my-1" name="Nama"
+                                        value="{{ $kriteria->Nama }}">
                                 </div>
                                 <div class="form-group">
                                     <label>Bobot</label>
@@ -57,8 +59,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <button class="btn bg-primary-light float-end border-dark my-2 float-end">Update
-                                        Kriteria</button>
+                                    <button class="btn bg-primary-light float-end border-dark my-2 float-end">Update Kriteria</button>
                                 </div>
                             </form>
                         </div>

@@ -29,5 +29,6 @@ Route::resource('kriteria', KriteriaController::class);
 Route::delete('/kriteria/{id}', 'KriteriaController@destroy')->name('kriteria.destroy');
 
 Route::resource('matriks', MatriksController::class);
+// Route::get('/matriks/{id}/edit', 'MatriksController@edit')->name('matriks.edit');
 Route::resource('alt', AltController::class);
 Route::resource('hitung', HitungController::class);
