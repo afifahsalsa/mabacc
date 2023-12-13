@@ -12,7 +12,7 @@
                     <div class="col-4 text-end">
                         <div class="pagetitle">
                             <a href="{{ route('alt.index') }}" class="btn bg-primary-light border-dark float-right"><i
-                                class="bi bi-arrow-left"></i></a>
+                                    class="bi bi-arrow-left"></i></a>
                             <a href="{{ route('kriteria.create') }}" class="btn bg-primary-light border-dark float-right"><i
                                     class="bi bi-plus-lg"></i></a>
                         </div>
@@ -53,8 +53,7 @@
                                                             method="post" class="d-inline">
                                                             @csrf
                                                             @method('DELETE')
-                                                            <button type="submit"
-                                                                class="btn bg-gradient-danger btn-link"
+                                                            <button type="submit" class="btn bg-gradient-danger btn-link"
                                                                 onclick="return confirm('yakin mau dihapus?')"><i
                                                                     class="bi bi-trash h4"></i></button>
                                                         </form>
@@ -64,8 +63,18 @@
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <a href="{{ route('matriks.index') }}" class="btn bg-blue border-dark float-end">Matriks Keputusan</a>
+                                @if ($kriteria->count() > 0)
+                                    <a href="{{ route('matriks.create') }}" class="btn bg-blue border-dark float-end">Matriks Keputusan</a>
+                                @else
+                                    <button class="btn bg-blue border-dark float-end" onclick="showAlert()""> Matriks </button>
+                                @endif
+                                {{-- <a href="{{ route('matriks.index') }}" class="btn bg-blue border-dark float-end">Matriks Keputusan</a> --}}
                             </div>
+                            <script>
+                                function showAlert(){
+                                    alert('Isi kriteria atau alternatif dulu');
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>

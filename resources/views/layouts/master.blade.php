@@ -47,7 +47,7 @@
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="{{ route('home') }}" class="logo d-flex align-items-center">
-                <img src="{{ asset('NiceAdmin') }}/assets/img/logo.png" alt="">
+                {{-- <img src="{{ asset('NiceAdmin') }}/assets/img/logo.png" alt=""> --}}
                 <span class="d-none d-lg-block">MABAC</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -100,40 +100,55 @@
 
 
     <!-- ======= Sidebar ======= -->
-    <aside id="sidebar" class="sidebar">
+    <aside id="sidebar" class="sidebar bg-primary-light">
 
-        <ul class="sidebar-nav" id="sidebar-nav">
+        <ul class="sidebar-nav " id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="{{route('home')}}">
+                <a class="nav-link " href="{{ route('home') }}">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
             </li><!-- End Dashboard Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('alt.index')}}">
-                    <i class="bi bi-menu-button-wide"></i><span>Alternatif</span><i class="bi bi-chevron-right ms-auto"></i>
+                <a class="nav-link collapsed" href="{{ route('alt.index') }}">
+                    <i class="bi bi-menu-button-wide"></i><span>Alternatif</span><i
+                        class="bi bi-chevron-right ms-auto"></i>
                 </a>
             </li><!-- End Components Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('kriteria.index')}}">
+                <a class="nav-link collapsed" href="{{ route('kriteria.index') }}">
                     <i class="bi bi-journal-text"></i><span>Kriteria</span><i class="bi bi-chevron-right ms-auto"></i>
                 </a>
             </li><!-- End Forms Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('matriks.index')}}">
-                    <i class="bi bi-layout-text-window-reverse"></i><span>Matriks</span><i class="bi bi-chevron-right ms-auto"></i>
+                <a class="nav-link collapsed" href="{{ route('matriks.index') }}">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Matriks</span><i
+                        class="bi bi-chevron-right ms-auto"></i>
                 </a>
+                {{-- @if ($matriks->count() > 0)
+                    <a class="nav-link collapsed" href="{{ route('matriks.index') }}">
+                        <i class="bi bi-layout-text-window-reverse"></i><span>Matriks</span><i
+                            class="bi bi-chevron-right ms-auto"></i>
+                    </a>
+                @else
+                <a class="nav-link collapsed" href="{{ route('matriks.create') }}">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Matriks</span><i
+                        class="bi bi-chevron-right ms-auto"></i>
+                </a>
+                @endif --}}
+
             </li><!-- End Tables Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('hitung.index')}}">
-                    <i class="bi bi-bar-chart"></i><span>Hasil Perhitungan</span><i class="bi bi-chevron-right ms-auto"></i>
+                <a class="nav-link collapsed" href="{{ route('hitung.index') }}">
+                    <i class="bi bi-bar-chart"></i><span>Hasil Perhitungan</span><i
+                        class="bi bi-chevron-right ms-auto"></i>
                 </a>
-                <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                {{-- <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
                         <a href="{{ asset('NiceAdmin') }}/charts-chartjs.html">
                             <i class="bi bi-circle"></i><span>Chart.js</span>
@@ -149,7 +164,7 @@
                             <i class="bi bi-circle"></i><span>ECharts</span>
                         </a>
                     </li>
-                </ul>
+                </ul> --}}
             </li><!-- End Charts Nav -->
 
         </ul>

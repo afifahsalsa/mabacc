@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\kriteria;
+use App\Models\alt;
 
 class KriteriaController extends Controller
 {
@@ -13,6 +14,7 @@ class KriteriaController extends Controller
     public function index()
     {
         $kriteria = kriteria::orderby('Code', 'asc')->get();
+        $alt = alt::orderby('id', 'asc')->get();
         return view('admin.kriteria.index', compact('kriteria'));
     }
 

@@ -88,7 +88,7 @@ class HitungController extends Controller
         arsort($rank);
     // //     dd($rank);
 
-        return view('admin.hitung.index', compact('alt', 'kriteria', 'matriks', 'total', 'hasil', 'V', 'G', 'Q', 'rank'));
+        return view('admin.hitung.index', compact('alt', 'kriteria', 'matriks', 'hasil', 'V', 'G', 'Q', 'rank'));
     }
 
     /**

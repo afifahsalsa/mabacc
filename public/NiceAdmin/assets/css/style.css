@@ -395,7 +395,7 @@ h6 {
   z-index: 997;
   height: 60px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  background-color: #5F9BCA;
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -624,7 +624,7 @@ h6 {
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 @media (max-width: 1199px) {
@@ -682,13 +682,15 @@ h6 {
 }
 
 .sidebar-nav .nav-item {
-  margin-bottom: 5px;
+  margin-bottom: 5px;x
+
 }
 
 .sidebar-nav .nav-heading {
   font-size: 11px;
   text-transform: uppercase;
   color: #899bbd;
+  /* background-color: #0000; */
   font-weight: 600;
   margin: 10px 0 5px 15px;
 }
@@ -713,7 +715,8 @@ h6 {
 
 .sidebar-nav .nav-link.collapsed {
   color: #012970;
-  background: #fff;
+  /* background: #fff; */
+  background-color: #cfe2ff;
 }
 
 .sidebar-nav .nav-link.collapsed i {
