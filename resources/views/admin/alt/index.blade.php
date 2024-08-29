@@ -11,8 +11,8 @@
                     </div>
                     <div class="col-4 text-end">
                         <div class="pagetitle">
-                            <a href="{{ route('alt.create') }}" class="btn bg-primary-light float-end border-dark"><i
-                                    class="bi bi-plus-lg"></i></a>
+                            <a href="{{ route('alt.create') }}" class="btn bg-primary-light float-end border-dark" ><i class="bi bi-plus-lg"></i></a>
+                             {{-- @include('admin.alt.create') --}}
                         </div>
                     </div>
                 </div>

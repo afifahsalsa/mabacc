@@ -23,11 +23,6 @@
                             <h1>Masukkan Data Alternatif</h1>
                         </div>
                     </div>
-                    {{-- <div class="col-4">
-                <div class="pagetitle text-end">
-                    <a href="{{ route('alt.create') }}" class="btn btn-outline-primary"><i class="bi bi-plus-lg"></i></a>
-                </div>
-            </div> --}}
                 </div>
             </div>
         </div>
